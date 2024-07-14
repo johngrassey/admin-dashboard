@@ -29,6 +29,19 @@ HTML RESET
   BASIC GRID
   */
 
+* {
+    font-family: Roboto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+img {
+    height: 1.25rem;
+}
+
 .page {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -37,10 +50,19 @@ HTML RESET
 .sidebar {
     background-color: #2dd4bf;
     height: 100vh;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
-.sidebar>ul>li {
-    list-style-type: none;;
+.toplinks, .bottomlinks {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 15px
+}
+
+.toplinks {
+    margin-bottom: 50px;
 }
 
 .maincontent {
