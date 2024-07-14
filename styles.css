@@ -25,21 +25,25 @@ HTML RESET
     isolation: isolate;
   }
 
-  /* 
-  BASIC GRID
-  */
+/* 
+MAIN CSS
+*/
 
 * {
     font-family: Roboto;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
-img {
-    height: 1.25rem;
+svg {
+    height: 1.5rem;
+}
+
+path {
+    fill: white;
 }
 
 .page {
@@ -55,14 +59,29 @@ img {
     font-weight: 700;
 }
 
-.toplinks, .bottomlinks {
+.toplinks, .bottomlinks, .logoicon {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 15px
+    gap: 15px;
+    margin-left: 20px;
 }
 
-.toplinks {
+.logo {
+    height: 3rem;
+    place-self: center;
+}
+
+.toplinks, .logoicon {
     margin-bottom: 50px;
+}
+
+.logoicon {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.icon {
+    place-self: center;
 }
 
 .maincontent {
