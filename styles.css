@@ -292,11 +292,20 @@ TRENDING
     margin-bottom: 0px;
 }
 
+.detailimg {
+    flex-shrink: 0;
+}
+
 div.detailcard img {
     height: 50px;
+    width: 50px;
     margin-right: 10px;
 }
 
 div.detailcard p {
     font-size: .75em;
+}
+.detailtext {
+    white-space: nowrap;
+    overflow: hidden;
 }
